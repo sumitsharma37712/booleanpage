@@ -127,6 +127,12 @@ text-decoration: none;
 
 /* about us section */
 
+.carousel-left .carousel-item img{
+    height: 49.625rem;
+    width: 57.25rem;
+
+}
+
 .cicon {
     position: relative;
     top: 45%;
