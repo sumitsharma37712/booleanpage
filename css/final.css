@@ -8,7 +8,7 @@
 }
 
 body{
-    width:1920px;
+    width:120rem;
     /* width: 100%; */
     /* overflow-x:hidden; */
 }
@@ -16,12 +16,12 @@ body{
 
 .navleft {
     display: flex;
-    padding-left: 180px;
+    padding-left: 11.25rem;
 }
 
 .navleft img {
     height: 134px;
-    width: 234px;
+    width: 14.625rem;
 }
 
 .navleft h1 {
@@ -49,12 +49,12 @@ text-decoration: none;
 }
 
 .navright ul {
-    padding: 60px;
+    padding: 3.75rem;
 
 }
 
 .navright ul li {
-    padding-left: 50px;
+    padding-left: 3.125rem;
 }
 
 /* hero section */
