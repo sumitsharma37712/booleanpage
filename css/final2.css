@@ -555,12 +555,16 @@
     display: flex;
     /* border:0px */
 }
+.insight_image{
+    width: 80%;
+    padding: 12px;
+}
 
 .insight_image img {
-    height: 666px;
-    width: 798px;
-    padding-left: 8px;
-    padding-top: 10px;
+    /* height: 666px; */
+    height: 100vh;
+    /* width: 41.563vw; */
+    /* width: 80%; */
 }
 
 .insight_text {
@@ -610,6 +614,9 @@
         height: 666px;
         width: 100%;
     }
+    .insight_image {
+        width: 100%;
+    }
 
     .insight_section {
         width: 100%;
@@ -638,7 +645,8 @@
     }
 
     .service-para {
-        font-size: 1.313rem;
+        /* font-size: 1.313rem; */
+        font-size: 300% ;
         font-weight: 300;
         word-spacing: 0.14rem;
     }
@@ -653,7 +661,8 @@
     .insight-text button {
         padding: 10px 25px 10px 25px;
         border-radius: 2px;
-        font-size: 1.313rem;
+        /* font-size: 1.313rem; */
+        font-size: 131.25%;
         background: transparent;
         border: 3px solid #6D95FC;
         margin-top: 2.688rem;
