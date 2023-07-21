@@ -1542,13 +1542,8 @@ form button {
     }
 
     .slide1 .media {
-        /* border: 1px solid rgb(56, 3, 3); */
-        width: 25.25rem;
-        height: 19.63rem;
-        border-radius: 38px;
-        padding: 3rem;
-        margin: 1rem 2rem 3rem;
-        background: linear-gradient(175.64deg, rgba(17, 24, 42, 0.7), rgba(17, 24, 42, 0));
+        width: 98%;
+        margin: 1rem 1rem 3rem !important;
     }
 
     .slide1 .media-body p {
@@ -1571,7 +1566,7 @@ form button {
 
     .intro .coomas{
         position: relative;
-        left: 100%;
+        left: 90%;
         top: -8rem;
     }
 
