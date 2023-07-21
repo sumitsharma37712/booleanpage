@@ -861,6 +861,7 @@ form button {
 
     .navbar #hamburger-btn {
         cursor: pointer;
+        padding-right: 96px;
         display: none;
     }
 
@@ -1403,7 +1404,7 @@ form button {
 @media screen and (max-width:1000px) {
 
     .insight_image img {
-        height: 400px !important;
+        height: 800px !important;
         width: 100%;
     }
 
@@ -1552,10 +1553,12 @@ form button {
         letter-spacing: 0.04em;
         font-weight: 300;
     }
-    .media-body .intro{
+
+    .media-body .intro {
         position: relative;
-        bottom:40%;
+        bottom: 40%;
     }
+
     .slide1 .media img {
         width: 7.125rem;
         height: 7.125rem;
@@ -1564,7 +1567,7 @@ form button {
         /* border: 10px solid black; */
     }
 
-    .intro .coomas{
+    .intro .coomas {
         position: relative;
         left: 90%;
         top: -8rem;
