@@ -89,14 +89,13 @@
 @media screen and (max-width:1000px) {
     .hero-main {
         /* width: 1920px; */
-        height: 50.563rem;
+        height: 40.563rem;
         background-image: url('../src/gloab.png');
         background-color: black;
-        background-size: 80% 80%;
-
+        background-size: 50%;
         background-repeat: no-repeat;
         /* left ke accoding rem padding-left:16.938rem; */
-        object-fit: cover;
+        object-fit: contain;
         padding-left: 2% !important;
 
     }
@@ -144,7 +143,7 @@
 
     .hero-content h1 {
         width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 700;
         text-transform: uppercase;
     }
