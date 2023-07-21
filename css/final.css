@@ -407,7 +407,7 @@ footer a:hover {
 .insight_text {
     padding: 8%;
     width: 100%;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .insight_text_head {
@@ -435,13 +435,16 @@ footer a:hover {
 
 }
 
-.insight_text button {
-    padding: 10px 25px 10px 25px;
+.insight_text button{
+    
+    padding: 0px 30px 0px 30px;
     border-radius: 2px;
     font-size: 1.313rem;
     background: transparent;
     border: 3px solid #6D95FC;
     margin-top: 2.688rem;
+    color: white;
+
 }
 
 .insight_text button a {
@@ -1447,14 +1450,16 @@ form button {
         margin: 10px 0px;
     }
 
-    .insight_text button {
-        /* height: 53px; */
-        padding: 10px 25px 10px 25px;
+    .insight_text button{
+    
+        padding: 0px 30px 0px 30px;
         border-radius: 2px;
         font-size: 1.313rem;
         background: transparent;
         border: 3px solid #6D95FC;
         margin-top: 2.688rem;
+        color: white;
+    
     }
 }
 
@@ -1514,14 +1519,16 @@ form button {
         margin: 10px 0px;
     }
 
-    .insight_text button {
-        padding: 1px 20px;
+    .insight_text button{
+    
+        padding: 0px 15px 0px 15px;
         border-radius: 2px;
-        /* font-size: 1.313rem; */
         font-size: 1rem;
         background: transparent;
         border: 3px solid #6D95FC;
-        margin-top: 1.688rem;
+        margin-top: 2.688rem;
+        color: white;
+    
     }
 }
 
