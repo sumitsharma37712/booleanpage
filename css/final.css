@@ -91,14 +91,17 @@ footer a:hover {
 
 /* hero section  */
 .hero-main {
-    /* width: 1920px; */
+    max-width: 1920px;
+    width: 100%;
+
     height: 60.563rem;
+    /* height: 100vh; */
     background-image: url('../src/hero.png');
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* left ke accoding rem padding-left:16.938rem; */
-    object-fit: cover;
+    object-fit: contain;
     /* padding-left: 14.115vw; */
     padding-left: 17.534rem;
 
@@ -182,20 +185,15 @@ footer a:hover {
 
 }
 
-.cicon {
-    position: relative;
-    top: 45%;
-    padding: 10px;
-    background-color: #6D95FC;
-    border-radius: 50%;
-}
+
 
 .aboutus {
     /* width: 708px; */
     /* left: 70px; */
     /* gap: 26px; */
+    margin-top: 2rem;
     letter-spacing: 0.3rem;
-    padding: 10px;
+    padding: 15px;
 
 }
 
@@ -205,6 +203,7 @@ footer a:hover {
     font-weight: 700;
     text-align: left;
     margin: 20px 0px;
+    align-items: baseline;
 
 }
 
@@ -215,23 +214,30 @@ footer a:hover {
 }
 
 .about-para {
-    width: 75%;
+    width: 90%;
     /* width: 44.25rem; */
-    font-family: Poppins;
     font-size: 1.313rem;
     font-weight: 300;
     text-align: left;
+    justify-content: left;
+    align-items: center;
     letter-spacing: 0.14rem;
-    /* line-height: 1rem; */
+    /* line-height: 2rem; */
     margin: 2.688 0px;
+
 
 
 }
 
-.cbutton {
-    /* height:10px; */
-    color: #6D95FC;
+
+.cicon {
+    position: relative;
+    top: 45%;
+    padding: 10px;
+    background-color: #6D95FC;
+    border-radius: 50%;
     opacity: 1;
+
 }
 
 .aboutus button {
@@ -254,22 +260,24 @@ footer a:hover {
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 15px !important;
+    height: 15px !important;
     border-radius: 50%;
     position: relative;
     top: 30%;
+    /* background: transparent !important; */
 }
 
 .carousel-indicators .active {
-    background-color: #6D95FC;
+    background-color: #6D95FC !important;
 }
 
 .slidea {
     position: relative;
     bottom: 0px;
     width: 5%;
-    /* border-radius: 50%; */
+    color: #6D95FC;
+    border-radius: 50%;
 }
 
 /* about section end  */
@@ -303,7 +311,7 @@ footer a:hover {
 }
 
 .service-text head {
-    font-size: 21px;
+    font-size: 1.313rem;
     text-transform: uppercase;
 }
 
@@ -342,29 +350,34 @@ footer a:hover {
 
 
 .swiper {
-    width: 100%;
+    width: 70%;
     height: 49.625rem;
     flex-shrink: 0;
 }
 
 .swiper-slide {
-    width: 60rem;
-
+    /* width: 60rem; */
+    width: 100%;
+    padding: 10%;
 }
 
 .swiper-slide img {
-    height: 35.5rem;
-    width: 37rem;
-    margin: 8rem;
+    height: auto;
+    /* height: 35.5rem; */
+    /* width: 37rem; */
+    width: 90%;
+    margin: 8rem 2rem;
 }
 
 .swiper_button_next {
     position: relative;
+    left: 10%;
     border-radius: 50%;
     background-color: #6d95fc;
     width: 100%;
-    height: 2.44rem;
-    margin-top: 8rem;
+
+    height: 1rem;
+    margin-top: 9rem;
 }
 
 .swiper_button_prev {
@@ -372,9 +385,23 @@ footer a:hover {
     border-radius: 50%;
     background-color: #6d95fc;
     width: 100%;
-    height: 2.44rem;
-    margin-top: 8rem;
+    margin-top: 9rem;
 }
+
+.swiper-button-prev:after {
+    font-size: 30px !important;
+    color: white;
+    /* background-color: #6D95FC; */
+    /* border-radius: 50%; */
+}
+
+.swiper-button-next:after {
+    font-size: 30px !important;
+    color: white;
+    /* background-color: #6D95FC; */
+    /* border-radius: 50%; */
+}
+
 
 
 /* inshight */
@@ -435,8 +462,8 @@ footer a:hover {
 
 }
 
-.insight_text button{
-    
+.insight_text button {
+
     padding: 0px 30px 0px 30px;
     border-radius: 2px;
     font-size: 1.313rem;
@@ -760,6 +787,7 @@ form button {
     color: black;
     padding: 10px, 25px, 10px, 25px;
     background-color: #6d95fc;
+    align-items: center;
 }
 
 
@@ -864,7 +892,7 @@ form button {
 
     .navbar #hamburger-btn {
         cursor: pointer;
-        padding-right: 96px;
+        padding-right: 20px;
         display: none;
     }
 
@@ -904,29 +932,33 @@ form button {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .navbar {
         margin-left: 0;
     }
 
     .navbar .all-links {
-        position: fixed;
-        left: -100%;
-        width: 300px;
-        display: block;
+        position: absolute;
+        right: -100%;
+        width: 350px;
+        display: none;
         height: 100vh;
-        top: 75px;
-        background: #000;
-        transition: left 0.3s ease;
+        top: 5rem;
+        background: black;
+        transition: right 0.8s ease;
     }
 
     .navbar #menu-toggler:checked~.all-links {
-        left: 0;
+        right: 0;
+        display: block;
+        /* display: none; */
     }
 
     .navbar .all-links li {
         font-size: 18px;
+        /* line-height: 0.5rem; */
     }
+
 
     .navbar #hamburger-btn {
         display: block;
@@ -945,37 +977,33 @@ form button {
         width: 94px;
     }
 
-    .navbar h2 {
-        font-size: 1.75rem !important;
-        font-weight: 700;
-    }
-
-    .navbar h2 a {
-        color: white;
-    }
-
-    .navbar {
+    navbar {
         margin-left: 0;
     }
 
     .navbar .all-links {
-        position: fixed;
-        left: -100%;
-        width: 300px;
-        display: block;
+        position: absolute;
+        right: -100%;
+        width: 350px;
+        display: none;
         height: 100vh;
-        top: 75px;
-        background: #000;
-        transition: left 0.3s ease;
+        top: 6rem;
+        background-color: black;
+        transition: right 0.8s ease;
     }
 
     .navbar #menu-toggler:checked~.all-links {
-        left: 0;
+        right: 0;
+        display: block;
+        /* display: none; */
     }
 
     .navbar .all-links li {
         font-size: 18px;
+        padding: 2px;
+        line-height: 0.5rem;
     }
+
 
     .navbar #hamburger-btn {
         display: block;
@@ -990,7 +1018,7 @@ form button {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
     .hero-main {
         /* width: 1920px; */
         /* height: 50.563rem; */
@@ -1075,16 +1103,6 @@ form button {
 }
 
 @media screen and (max-width: 560px) {
-    .hero-main::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.2);
-    }
-
     .hero-content .hero-head {
         font-size: 0.7rem;
     }
@@ -1143,7 +1161,7 @@ form button {
 }
 
 /* about */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
 
     .about .aboutsection {
         width: 100%;
@@ -1257,7 +1275,7 @@ form button {
 
 
 /* service section */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
 
     .service {
         width: 100%;
@@ -1404,7 +1422,7 @@ form button {
 }
 
 /* insights sections */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
 
     .insight_image img {
         height: 800px !important;
@@ -1450,8 +1468,8 @@ form button {
         margin: 10px 0px;
     }
 
-    .insight_text button{
-    
+    .insight_text button {
+
         padding: 0px 30px 0px 30px;
         border-radius: 2px;
         font-size: 1.313rem;
@@ -1459,7 +1477,7 @@ form button {
         border: 3px solid #6D95FC;
         margin-top: 2.688rem;
         color: white;
-    
+
     }
 }
 
@@ -1519,22 +1537,22 @@ form button {
         margin: 10px 0px;
     }
 
-    .insight_text button{
-    
+    .insight_text button {
+
         padding: 0px 15px 0px 15px;
         border-radius: 2px;
-        font-size: 1rem;
+        font-size: 1.313rem;
         background: transparent;
         border: 3px solid #6D95FC;
         margin-top: 2.688rem;
         color: white;
-    
+
     }
 }
 
 
 /* testimonials */
-@media screen and (max-width:1000px) {}
+@media screen and (max-width:1080px) {}
 
 @media screen and (max-width:560px) {
 
@@ -1597,7 +1615,7 @@ form button {
 
 
 /* footer section */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1080px) {
 
     .footer {
         display: block;
@@ -1694,7 +1712,7 @@ form button {
 
     .contact {
         height: 575px;
-        width: 16.688rem;
+        width: 100%;
         background: linear-gradient(179.96deg, #12192B 0.03%, rgba(18, 25, 43, 0) 109.04%);
         margin-left: 2%;
         padding: 10px, 25px, 10px, 25px;
@@ -1718,6 +1736,7 @@ form button {
     }
 
     form button {
+        align-items: center;
         width: 8rem;
         height: 43.65px;
         border-radius: 2px;
