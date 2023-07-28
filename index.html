@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/icons.png" type="image/x-icon">
     <title>Boolean ai</title>
     <link rel="stylesheet" href="./css/final2.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -25,24 +26,24 @@
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </label>
             <label class="logo"><img src="./src/logo2.png" alt=""></label>
             <ul>
-              <li><a class="" href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Our Products</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #6d95fc;"></i></a></li>
+                <li><a class="" href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #6d95fc;"></i></a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
-    
 
 
 
-    
+
+
 
 
     <!-- heros <section></section> -->
@@ -65,17 +66,9 @@
 
     <!-- about section -->
 
-    <div class="row m-0 about justify-content-around" style="background-color: #000; color: white;">
+    <div class="row m-0 about" style="background-color: #000; color: white;">
         <div class="aboutsection" style="margin-left:-12px">
             <div id="carouselExampleAutoplaying" class="carousel slide sidemain" data-bs-ride="carousel">
-                <ul class="carousel-indicators active">
-                    <li type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
-                        class="slidea active" aria-current="true" aria-label="Slide 1"></li>
-                    <li type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="slidea"
-                        aria-label="Slide 2"></li>
-                    <li type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="slidea"
-                        aria-label="Slide 3"></li>
-                </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./src/about1.png" alt="..." class="img-fluid">
@@ -87,18 +80,27 @@
                         <img src="./src/about3.png" alt="..." class="img-fluid">
                     </div>
                 </div>
-                <button class="carousel-control-prev cbutton" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <!-- <i class="fa-solid fa-chevron-left cicon"></i> -->
-                    <span class="carousel-control-prev-icon cicon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next cbutton" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <!-- <i class="fa-solid fa-chevron-right cicon"></i> -->
-                    <span class="carousel-control-next-icon cicon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="indecates" style="position: relative;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active pagination2" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"class="pagination2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"class="pagination2"></button>
+                        <button class="carousel-control-prev cbutton" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <!-- <i class="fa-solid fa-chevron-left cicon"></i> -->
+                        <span class="carousel-control-prev-icon cicon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next cbutton" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <!-- <i class="fa-solid fa-chevron-right cicon"></i> -->
+                        <span class="carousel-control-next-icon cicon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>  
+                    </div>
+                    
+                </div>
+
             </div>
         </div>
         <div class="aboutsection aboutsection1">
@@ -190,9 +192,9 @@
                             <img src="./src/service2.png" alt="" class="slide_image">
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next ourserviceside"></div>
+                    <div class="swiper-button-prev ourserviceside"></div>
+                    <div class="swiper-pagination servicepagination"></div>
                 </div>
             </div>
         </div>
@@ -396,18 +398,9 @@
                 </div>
 
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination testpagination"></div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
 
 
     <!-- footer secton  -->
@@ -425,7 +418,7 @@
 
                         <div class="address">
                             <div class="address1">
-                                <img src="./src/location.png" alt="" height="45px" width="32px">
+                                <img src="./src/location.png" alt="" height="45px" width="32px" style="margin-top: 20px;">
                             </div>
                             <div class="address2">
                                 <div class="address2-content">
@@ -437,7 +430,7 @@
                         </div>
                         <div class="address">
                             <div class="address1">
-                                <img src="./src/phone.png" alt="" height="33px" width="35px">
+                                <img src="./src/phone.png" alt="" height="33px" width="35px" style="margin-top: 15px;">
                             </div>
                             <div class="address2">
                                 <div class="address2-content">
@@ -448,7 +441,7 @@
                         </div>
                         <div class="address">
                             <div class="address1">
-                                <img src="./src/gmail.png" alt="" height="45px" width="45px">
+                                <img src="./src/gmail.png" alt="" height="45px" width="40px">
                             </div>
                             <div class="address2">
                                 <div class="address2-content">
@@ -459,7 +452,7 @@
                         </div>
                         <div class="address">
                             <div class="address1">
-                                <img src="./src/pdf.png" alt="" height="42px" width="32px">
+                                <img src="./src/pdf.png" alt="" height="42px" width="32px" style="margin-top: 10px;margin-left: 8px;">
                             </div>
                             <div class="address2">
                                 <div class="address2-content">
