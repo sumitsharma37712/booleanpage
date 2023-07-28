@@ -1035,15 +1035,6 @@
             margin: auto;
         }
 
-        .swiper_button_next {
-            position: relative;
-            left: 10%;
-            border-radius: 50%;
-            background-color: #6d95fc;
-            width: 100%;
-            height: 1rem;
-            margin-top: 9rem;
-        }
 
         .servicepagination .swiper-pagination-bullet {
             width: 0.8125rem;
@@ -1069,17 +1060,8 @@
 
         .swiper-button-next:after,
         .swiper-button-prev:after {
-            font-family: swiper-icons;
-            font-size: var(--swiper-navigation-size);
-            text-transform: none !important;
-            letter-spacing: 0;
-            font-variant: initial;
-            line-height: 1;
             display: none !important;
         }
-
-
-
 
         @media (max-width:1635px) {
             .service-center {
@@ -1174,6 +1156,23 @@
 
 
 
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 1.4375rem !important;
+                height: 1.4375rem !important;
+                flex-shrink: 0;
+                border-radius: 50%;
+                background-color: #6d95fc;
+            }
+
+            .swiper-button-prev .cicon,
+            .swiper-button-next .cicon {
+                height: 16.55px;
+                width: 10px;
+            }
+
+
         }
 
         @media (max-width:767px) {
@@ -1260,6 +1259,15 @@
 
             }
 
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 2.4375rem !important;
+                height: 2.4375rem !important;
+                flex-shrink: 0;
+                border-radius: 50%;
+                background-color: #6d95fc;
+            }
+
 
         }
 
@@ -1291,6 +1299,16 @@
                 width: 90%;
                 margin: auto;
             }
+
+
+
+
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                display: none !important;
+            }
+
+
 
         }
 
@@ -1900,17 +1918,18 @@
         }
 
         .footer-center-contact {
-            width: 60%;
+            width: 80%;
             margin: auto;
+            display: flex;
+            justify-content: center;
         }
 
         .footer-contain-contact {
-            width: 100%;
+            width: 33.67rem;
             position: relative;
             top: 50px;
-            border-radius: 30px;
-            background: linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 61.55%);
-
+            border-radius: 2.125rem;
+            background: linear-gradient(180deg, #12192B 0%, rgba(18, 25, 43, 0.00) 100%);
         }
 
         .footer-contain-contact form {
@@ -1921,6 +1940,7 @@
             height: 47px;
             width: 26.625rem;
             border: 2px solid white;
+            color: #FFF;
             background-color: transparent !important;
         }
 
@@ -1938,16 +1958,16 @@
 
         form button {
             display: flex;
-            width: 188px;
-            height: 43.647px;
-            padding: 10px 25px;
+            width: 11.75rem;
+            height: 2.72794rem;
+            padding: 0.625rem 1.5625rem;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 0.625rem;
             flex-shrink: 0;
-            color: black;
-            background-color: #6D95FC;
-            margin: auto;
+            border-radius: 0.125rem;
+            border: 3px solid #6D95FC;
+            background: #6D95FC;
         }
 
         .contactline {
@@ -2040,6 +2060,21 @@
 
 
 
+        }
+        @media (max-width:991px) {
+            .footer-left{
+                width: 40%;
+                
+            }
+            .footer-center-get {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid darkblue; */
+        }
+            .footer-right{
+                width:60%;
+            }
+            
         }
 
         @media (max-width:767px) {
@@ -2139,9 +2174,15 @@
         }
 
         .footer-bottom .footer-para {
-            font-size: 1.313rem;
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.3125rem;
+            font-style: normal;
             font-weight: 300;
-            margin: auto;
+            line-height: 166.5%;
+            /* 2.18531rem */
+            letter-spacing: 0.0525rem;
         }
 
         .footerlist li {
@@ -2426,7 +2467,7 @@
                             <img src="./src/service1.png" alt="" srcset="">
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide serviceslide">
                         <div class="slide-img">
                             <img src="./src/service2.png" alt="" srcset="">
                         </div>
@@ -2687,20 +2728,20 @@
                 <div class="footer-center-contact">
                     <div class="footer-contain-contact">
                         <form action="#" method="get">
-                            <div class="mb-3 ">
+                            <div class="mb-3">
                                 <label for="name" class="form-label">YOUR NAME</label>
                                 <input type="text" name="name" class="form-control rounded-0" id="name">
                             </div>
-                            <div class="mb-3 ">
+                            <div class="mb-3">
                                 <label for="email" class="form-label">YOUR EMAIL</label>
                                 <input type="email" name="email" class="form-control rounded-0" id="email">
                             </div>
-                            <div class="mb-3 ">
+                            <div class="mb-3">
                                 <label for="address" class="form-label">ADDRESS</label>
                                 <textarea class="form-control rounded-0" id="address" name="message"
                                     rows="5"></textarea>
                             </div>
-                            <button>Send Message</button>
+                            <button class="col-sm-6 mx-auto">Send Message</button>
                             <br><br>
 
                         </form>
@@ -2709,7 +2750,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-second">
+        <div class="footer-second py-5">
             <div class="container footer-bottom mx-auto text-center">
                 <h1 class=""><span style="color: #6d95fc;">Boolean</span> ai </h1>
                 <p class="complexity">complexity simplify</p>
@@ -2722,7 +2763,7 @@
                     <li class="list-inline-item">FAQ's & help</li>
                     <li class="list-inline-item">Careers</li>
                 </ul>
-                <p class=" col-sm-5 mx-auto text-center footer-para">Lorem ipsum Neque porro quisquam est qui do lorem
+                <p class="col-sm-6 col-lg-6 mx-auto footer-para">Lorem ipsum Neque porro quisquam est qui do lorem
                     ipsum quia dolor sit amet, Neque porro elit NeDque </p>
                 <ul class="list-inline footerlist">
                     <li class="list-inline-item"><a class="nav-link" aria-current="page"
